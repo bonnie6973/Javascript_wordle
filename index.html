@@ -4,14 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wordle!!</title>
-    <!-- requirments -->
-    <!-- 5글자 단어(존재하는 단어가 아니어도 됨)
-    6번의 시도 가능
-    존재하면 노란색, 위치도 맞으면 초록색으로 표시
-    게임 종료 판단
-    (추가) 상단에 게임 시간 표시하기
-    (선택) 키보드에도 동일하게 표시
-    (선택) 키보드 클릭으로도 입력 -->
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -39,47 +32,48 @@
       </div>
     </header>
     <main>
+      <div class="time">00:00</div>
       <div class="board-row row-0">
-        <div class="board-block" data-key="01"></div>
-        <div class="board-block" data-key="02"></div>
-        <div class="board-block" data-key="03"></div>
-        <div class="board-block" data-key="04"></div>
-        <div class="board-block" data-key="05"></div>
+        <div class="board-block" data-index="00"></div>
+        <div class="board-block" data-index="01"></div>
+        <div class="board-block" data-index="02"></div>
+        <div class="board-block" data-index="03"></div>
+        <div class="board-block" data-index="04"></div>
       </div>
       <div class="board-row row-1">
-        <div class="board-block" data-key="11"></div>
-        <div class="board-block" data-key="12"></div>
-        <div class="board-block" data-key="13"></div>
-        <div class="board-block" data-key="14"></div>
-        <div class="board-block" data-key="15"></div>
+        <div class="board-block" data-index="10"></div>
+        <div class="board-block" data-index="11"></div>
+        <div class="board-block" data-index="12"></div>
+        <div class="board-block" data-index="13"></div>
+        <div class="board-block" data-index="14"></div>
       </div>
       <div class="board-row row-2">
-        <div class="board-block" data-key="21"></div>
-        <div class="board-block" data-key="22"></div>
-        <div class="board-block" data-key="23"></div>
-        <div class="board-block" data-key="24"></div>
-        <div class="board-block" data-key="25"></div>
+        <div class="board-block" data-index="20"></div>
+        <div class="board-block" data-index="21"></div>
+        <div class="board-block" data-index="22"></div>
+        <div class="board-block" data-index="23"></div>
+        <div class="board-block" data-index="24"></div>
       </div>
       <div class="board-row row-3">
-        <div class="board-block" data-key="31"></div>
-        <div class="board-block" data-key="32"></div>
-        <div class="board-block" data-key="33"></div>
-        <div class="board-block" data-key="34"></div>
-        <div class="board-block" data-key="35"></div>
+        <div class="board-block" data-index="31"></div>
+        <div class="board-block" data-index="32"></div>
+        <div class="board-block" data-index="33"></div>
+        <div class="board-block" data-index="34"></div>
+        <div class="board-block" data-index="30"></div>
       </div>
       <div class="board-row row-4">
-        <div class="board-block" data-key="41"></div>
-        <div class="board-block" data-key="42"></div>
-        <div class="board-block" data-key="43"></div>
-        <div class="board-block" data-key="44"></div>
-        <div class="board-block" data-key="45"></div>
+        <div class="board-block" data-index="40"></div>
+        <div class="board-block" data-index="41"></div>
+        <div class="board-block" data-index="42"></div>
+        <div class="board-block" data-index="43"></div>
+        <div class="board-block" data-index="44"></div>
       </div>
       <div class="board-row row-5">
-        <div class="board-block" data-key="51"></div>
-        <div class="board-block" data-key="52"></div>
-        <div class="board-block" data-key="53"></div>
-        <div class="board-block" data-key="54"></div>
-        <div class="board-block" data-key="55"></div>
+        <div class="board-block" data-index="50"></div>
+        <div class="board-block" data-index="51"></div>
+        <div class="board-block" data-index="52"></div>
+        <div class="board-block" data-index="53"></div>
+        <div class="board-block" data-index="54"></div>
       </div>
     </main>
     <footer>
@@ -125,5 +119,6 @@
       <div></div>
       <div></div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
