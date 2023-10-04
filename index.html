@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>wordle!!</title>
     <!-- requirments -->
     <!-- 5글자 단어(존재하는 단어가 아니어도 됨)
     6번의 시도 가능
@@ -12,53 +12,118 @@
     (추가) 상단에 게임 시간 표시하기
     (선택) 키보드에도 동일하게 표시
     (선택) 키보드 클릭으로도 입력 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="info_bar">
+        <div class="info_bar_L">
+          <img src="svg/menubar.svg" alt="메뉴" />
+        </div>
+        <div class="info_bar_name">Wordle</div>
+        <div class="info_bar_R">
+          <div class="info_bar_R_icons">
+            <img src="svg/Q&A.svg" alt="메뉴" />
+          </div>
+          <div class="info_bar_R_icons">
+            <img src="svg/STATISTICS.svg" alt="메뉴" />
+          </div>
+          <div class="info_bar_R_icons">
+            <img src="svg/SETTINGS.svg" alt="메뉴" />
+          </div>
+          <div class="info_bar_R_btn">Subscribe to Games</div>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="board-row row-0">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="01"></div>
+        <div class="board-block" data-key="02"></div>
+        <div class="board-block" data-key="03"></div>
+        <div class="board-block" data-key="04"></div>
+        <div class="board-block" data-key="05"></div>
       </div>
       <div class="board-row row-1">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="11"></div>
+        <div class="board-block" data-key="12"></div>
+        <div class="board-block" data-key="13"></div>
+        <div class="board-block" data-key="14"></div>
+        <div class="board-block" data-key="15"></div>
       </div>
       <div class="board-row row-2">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="21"></div>
+        <div class="board-block" data-key="22"></div>
+        <div class="board-block" data-key="23"></div>
+        <div class="board-block" data-key="24"></div>
+        <div class="board-block" data-key="25"></div>
       </div>
       <div class="board-row row-3">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="31"></div>
+        <div class="board-block" data-key="32"></div>
+        <div class="board-block" data-key="33"></div>
+        <div class="board-block" data-key="34"></div>
+        <div class="board-block" data-key="35"></div>
       </div>
       <div class="board-row row-4">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="41"></div>
+        <div class="board-block" data-key="42"></div>
+        <div class="board-block" data-key="43"></div>
+        <div class="board-block" data-key="44"></div>
+        <div class="board-block" data-key="45"></div>
       </div>
       <div class="board-row row-5">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-block" data-key="51"></div>
+        <div class="board-block" data-key="52"></div>
+        <div class="board-block" data-key="53"></div>
+        <div class="board-block" data-key="54"></div>
+        <div class="board-block" data-key="55"></div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="keyboard-row row-0">
+        <div class="keyboard-alphabet" data-key="Q">Q</div>
+        <div class="keyboard-alphabet" data-key="W">W</div>
+        <div class="keyboard-alphabet" data-key="E">E</div>
+        <div class="keyboard-alphabet" data-key="R">R</div>
+        <div class="keyboard-alphabet" data-key="T">T</div>
+        <div class="keyboard-alphabet" data-key="Y">Y</div>
+        <div class="keyboard-alphabet" data-key="U">U</div>
+        <div class="keyboard-alphabet" data-key="I">I</div>
+        <div class="keyboard-alphabet" data-key="O">O</div>
+        <div class="keyboard-alphabet" data-key="P">P</div>
+      </div>
+
+      <div class="keyboard-row row-1">
+        <div class="keyboard-alphabet" data-key="A">A</div>
+        <div class="keyboard-alphabet" data-key="S">S</div>
+        <div class="keyboard-alphabet" data-key="D">D</div>
+        <div class="keyboard-alphabet" data-key="F">F</div>
+        <div class="keyboard-alphabet" data-key="G">G</div>
+        <div class="keyboard-alphabet" data-key="H">H</div>
+        <div class="keyboard-alphabet" data-key="J">J</div>
+        <div class="keyboard-alphabet" data-key="K">K</div>
+        <div class="keyboard-alphabet" data-key="L">L</div>
+      </div>
+      <div class="keyboard-row row-2">
+        <div class="keyboard-etc" data-key="ENTER">ENTER</div>
+        <div class="keyboard-alphabet" data-key="Z">Z</div>
+        <div class="keyboard-alphabet" data-key="X">X</div>
+        <div class="keyboard-alphabet" data-key="C">C</div>
+        <div class="keyboard-alphabet" data-key="V">V</div>
+        <div class="keyboard-alphabet" data-key="B">B</div>
+        <div class="keyboard-alphabet" data-key="N">N</div>
+        <div class="keyboard-alphabet" data-key="M">M</div>
+        <div class="keyboard-etc">
+          <div class="keyboard-etc_icon" data-key="BACK">
+            <img src="svg/delete.svg" alt="back" />
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </footer>
   </body>
 </html>

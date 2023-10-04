@@ -1,0 +1,38 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.keyboard-alphabet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 50px;
+  background-color: #d3d6da;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.keyboard-etc_icon {
+  width: 20px;
+}
+
+.keyboard-etc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  font-size: 12px;
+  background-color: #d3d6da;
+  border-radius: 3px;
+  font-weight: bold;
+}
